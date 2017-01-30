@@ -1,0 +1,5 @@
+site_name: "KorcsmarosLab Hackathon - 2017"
+theme: alabaster
+pages:
+- 'index.md'
+- 'schedule.md'
