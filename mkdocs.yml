@@ -1,5 +1,5 @@
-site_name: "KorcsmarosLab Hackathon - 2017"
-theme: alabaster
+site_name: "Hackathon17"
+theme: readthedocs
 pages:
 - 'index.md'
 - 'schedule.md'
