@@ -1,5 +1,6 @@
 site_name: "Hackathon17"
 theme: readthedocs
 pages:
-- 'index.md'
-- 'schedule.md'
+- Home: 'index.md'
+- Schedule: 'schedule.md'
+- "Edit docs": 'docs.md'
