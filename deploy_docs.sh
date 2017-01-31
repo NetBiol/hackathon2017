@@ -22,4 +22,4 @@ GITHUB_REPO_SSH_URL="git@github.com:$GITHUB_USER/$GITHUB_REPO.git"
 git remote set-url origin $GITHUB_REPO_SSH_URL
 
 # deploy docs
-mkdocs gh-deploy
+mkdocs gh-deploy --force
