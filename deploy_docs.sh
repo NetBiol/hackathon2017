@@ -26,5 +26,7 @@ git remote set-url origin $GITHUB_REPO_SSH_URL
 echo "After:"
 git remote -v
 
+git pull
+
 # deploy docs
 mkdocs gh-deploy
