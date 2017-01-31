@@ -14,6 +14,9 @@ ssh-add $RSA_key_file
 # config git
 git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
+REPO=`git config remote.origin.url`
+SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
+git remote set-url origin $SSH_REPO
 
 # deploy docs
 mkdocs gh-deploy
