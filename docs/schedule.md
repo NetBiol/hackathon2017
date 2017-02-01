@@ -3,7 +3,7 @@
 - Arriving
 - 19:30 - Dinner
 
-# 13th February 2017
+# 14th February 2017
 
 - 10:00 - 10:30 - Opening and Health&Safety
 - 10:30 - 11:00 - HPC tour by CiS
@@ -16,7 +16,7 @@
 - 15:00 - 16:00 - Team formation + team activity (Aidan)
 - 16:00 - 17:00 - Brainstorming on the biological problem
 
-# 14th February 2017
+# 15th February 2017
 
 - 09:30 - 10:00 - Start + feedback about biological problem - insights, solutions etc
 - 10:00 - 12:30 - Task, workflow creation session 1 - On the fly - Coffee break
