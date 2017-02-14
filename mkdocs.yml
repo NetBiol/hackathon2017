@@ -4,4 +4,5 @@ pages:
 - Home: 'index.md'
 - Schedule: 'schedule.md'
 - "Edit docs": 'docs.md'
+- "Training Material": training-material.md
 #- "Tools and scrips": tools-and-scrips.md
