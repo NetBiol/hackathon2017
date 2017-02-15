@@ -1,0 +1,22 @@
+<tool id="int_transfer" name="Interaction transfer" version="0.1.0">
+    <requirements>
+    </requirements>
+    <stdio>
+        <exit_code range="1:" />
+    </stdio>
+    <command><![CDATA[
+         python '$__tool_directory__/transfer.py' $ortho $interact $orig_spec $targ_spec > $output
+    ]]></command>
+    <inputs>
+        <param name="ortho" type="data" format="tsv" label="Three column ortholog format" />
+        <param name="interact" type="data" format="tsv" label="Molecular interaction" />
+        <param name="orig_spec" type="text" label="Original species" />
+        <param name="targ_spec" type="text" label="Target species" />
+    </inputs>
+    <outputs>
+        <data name="output" type="data" format="tsv" label="Translated molecular interaction" />
+    </outputs>
+    <help><![CDATA[
+        TODO: Fill in help.
+    ]]></help>
+</tool>
