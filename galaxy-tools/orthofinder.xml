@@ -10,7 +10,7 @@
             ln -s '$f' temp/${i}.fasta &&
         #end for
         orthofinder -t \${GALAXY_SLOTS:-1} -og -f temp/ &&
-        mv temp/Results_.*/Orthogroups.csv '$outputfile'
+        mv temp/Results_*/Orthogroups.csv '$outputfile'
 ]]>
     </command>
     <inputs>
