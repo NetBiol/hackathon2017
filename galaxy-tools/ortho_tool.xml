@@ -8,10 +8,10 @@
         python '$__tool_directory__/ortho_tool.py' '$input' '$output'
     ]]></command>
     <inputs>
-        <param name="input" type="data" format="tsv" label="Ortho mcl output"/>
+        <param name="input" type="data" format="tabular" label="Ortho mcl output"/>
     </inputs>
     <outputs>
-        <data format="tsv" name="output" label="Three column output" />
+        <data format="tabular" name="output" label="Three column output" />
     </outputs>
     <help><![CDATA[
         Displays the orthology groups, gene ids and name of the species.
