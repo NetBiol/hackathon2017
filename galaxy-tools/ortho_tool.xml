@@ -5,7 +5,7 @@
         <exit_code range="1:" />
     </stdio>
     <command><![CDATA[
-        python '$__tool_directory__/script.py' '$input' '$output'
+        python '$__tool_directory__/ortho_tool.py' '$input' '$output'
     ]]></command>
     <inputs>
         <param name="input" type="data" format="csv" label="Ortho mcl output"/>
