@@ -1,25 +1,32 @@
-<tool id = "orthofinder"  name = "Orthofinder" version = "1.1.4">
-    <description>predicts interactions between proteins based on domain motif interactions</description>
+<tool id="orthofinder" name="OrthoFinder" version="1.1.4">
+    <description>Accurate inference of orthogroups</description>
+    <requirements>
+        <requirement type="package" version="1.1.4">orthofinder</requirement>
+    </requirements>
     <command>
-    <![CDATA[
+<![CDATA[
         mkdir -p temp/ &&
         #for $i, $f in enumerate($fastainput)
-            ln -s $f temp/${i}.fasta &&
+            ln -s '$f' temp/${i}.fasta &&
         #end for
-        orthofinder -og -f temp/ &&
-        cat temp/Results_Feb15/Orthogroups.csv > $outputfile
-    ]]>
+        orthofinder -t \${GALAXY_SLOTS:-1} -og -f temp/ &&
+        mv temp/Results_.*/Orthogroups.csv '$outputfile'
+]]>
     </command>
     <inputs>
         <param name="fastainput" type="data" multiple="true" format="fasta" label="sequences of bacterial proteins in fasta format" />
     </inputs>
     <outputs>
-        <data name = "outputfile" format = "tabular" label = "${tool.id} on ${on_string}: orthology groups" />
+        <data name="outputfile" format="tabular" label="${tool.id} on ${on_string}: orthology groups" />
     </outputs>
+    <tests>
+    </tests>
     <help>
-        Predicts orthology groups for a given list of FASTA protein files
+<![CDATA[
+OrthoFinder predicts orthology groups for a given list of FASTA protein files.
+]]>
     </help>
     <citations>
+        <citation type="doi">10.1186/s13059-015-0721-2</citation>
     </citations>
 </tool>
-
