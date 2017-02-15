@@ -16,6 +16,8 @@
     <outputs>
         <data name="output" format="tsv" label="Translated molecular interaction" />
     </outputs>
+    <tests>
+    </tests>
     <help><![CDATA[
         TODO: Fill in help.
     ]]></help>

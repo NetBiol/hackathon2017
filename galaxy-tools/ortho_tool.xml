@@ -13,6 +13,8 @@
     <outputs>
         <data format="tabular" name="output" label="Three column output" />
     </outputs>
+    <tests>
+    </tests>
     <help><![CDATA[
         Displays the orthology groups, gene ids and name of the species.
     ]]></help>
