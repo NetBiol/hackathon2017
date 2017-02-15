@@ -1,0 +1,19 @@
+<tool id="ortho" name="ortho" version="0.1.0">
+    <requirements>
+    </requirements>
+    <stdio>
+        <exit_code range="1:" />
+    </stdio>
+    <command><![CDATA[
+        python '$__tool_directory__/script.py' '$input' '$output'
+    ]]></command>
+    <inputs>
+        <param name="input" type="data" format="csv" label="Ortho mcl output"/>
+    </inputs>
+    <outputs>
+        <data format="tsv" name="output" label="Three column output" />
+    </outputs>
+    <help><![CDATA[
+        Displays the orthology groups, gene ids and name of the species.
+    ]]></help>
+</tool>
