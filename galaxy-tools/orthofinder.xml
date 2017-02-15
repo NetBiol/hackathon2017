@@ -3,6 +3,9 @@
     <requirements>
         <requirement type="package" version="1.1.4">orthofinder</requirement>
     </requirements>
+    <stdio>
+        <exit_code range="1:" />
+    </stdio>
     <command>
 <![CDATA[
         mkdir -p temp/ &&
