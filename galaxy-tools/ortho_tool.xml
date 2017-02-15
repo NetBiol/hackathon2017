@@ -8,7 +8,7 @@
         python '$__tool_directory__/ortho_tool.py' '$input' '$output'
     ]]></command>
     <inputs>
-        <param name="input" type="data" format="csv" label="Ortho mcl output"/>
+        <param name="input" type="data" format="tsv" label="Ortho mcl output"/>
     </inputs>
     <outputs>
         <data format="tsv" name="output" label="Three column output" />

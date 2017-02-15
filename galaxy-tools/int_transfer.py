@@ -1,9 +1,6 @@
-
 # coding: utf-8
 
-# In[16]:
-
-import sys, os
+import sys
 
 result = {}
 second = {}
@@ -24,7 +21,7 @@ with open(sys.argv[1], 'r') as infile:
 for key, value in result.items():
     for ecoli in value[sys.argv[2]]:
         second[ecoli] == value[sys.argv[3]]
-        
+
 with open(sys.argv[4], 'r') as infile:
     for lines in infile:
         cells = lines.lower().strip().split('\t')
@@ -35,5 +32,3 @@ with open(sys.argv[4], 'r') as infile:
         for tf in second[cells[0]]:
             for genes in second[cells[1]]:
                 print(tf + '\t' + genes)
-        
-
